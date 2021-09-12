@@ -45,9 +45,9 @@ Encrypted Message:    ^RS]hS]hKh^O]^
 To close the program press Ctrl+C
 ```
 
-Copy the encrypted message: ^RS]hS]hKh^O]^
+**Copy the encrypted message**: ^RS]hS]hKh^O]^
 
-Restart the program
+**Restart the program**
 
 ```
 Welcome to the Vigenere Cypher Program!
