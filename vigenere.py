@@ -96,3 +96,6 @@ else:
     key = input("\nType in the key phrase to encrypt and press ENTER:\t")
 
     encrypt(message, key)
+
+while mode == 1 or mode == 0:
+    stop = input("To close the program press Ctrl+C\t")
