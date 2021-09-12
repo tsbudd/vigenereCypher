@@ -59,13 +59,13 @@ def decrypt(message, key):
 #-------------------------------------------------------- BEGIN MAIN CODE ----------------------------------------------
 
 print("Welcome to the Vigenere Cypher Program!\nCreated by: TYLER S. BUDD\nCreation date: September 12th, 2021")
-print("NOTE: This encryption program only encrypts/decrypts letters, numbers, and basic punctuation. Any symbol/letter not found on a US keyboard will result in failure.\n")
+print("NOTE: This encryption program only encrypts/decrypts letters, numbers, and basic punctuation.\n\t Any symbol/letter not found on a US keyboard will result in failure.\n")
 
 
 mode = 0 #if 0, then program set to decryption mode, else if 1 it'll set to encryption
 print("To ENCRYPT a message, type 'encrypt' and press ENTER\nTo DECRYPT a message, type 'decrypt' and press ENTER\n")
 while mode == 0:
-    selection = input("Selection: ")
+    selection = input("Selection:\t")
     if selection == "encrypt":
         mode = 1
         break
@@ -98,4 +98,4 @@ else:
     encrypt(message, key)
 
 while mode == 1 or mode == 0:
-    stop = input("\n\nTo close the program press Ctrl+C\t")
+    stop = input("\nTo close the program press Ctrl+C\t")
