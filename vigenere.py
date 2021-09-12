@@ -31,7 +31,7 @@ def encrypt(message, key):
         if j != 0:
             j = j+1
 
-    print("Encrypted Message: %s" % retString)
+    print("\nEncrypted Message: %s" % retString)
 
 def decrypt(message, key):
     retString = "" #init decrypted string
@@ -53,7 +53,7 @@ def decrypt(message, key):
         if j != 0:
             j = j+1
         
-    print("Decrypted Message: %s" % retString)
+    print("\nDecrypted Message: %s" % retString)
 
 
 #-------------------------------------------------------- BEGIN MAIN CODE ----------------------------------------------
@@ -98,4 +98,4 @@ else:
     encrypt(message, key)
 
 while mode == 1 or mode == 0:
-    stop = input("To close the program press Ctrl+C\t")
+    stop = input("\n\nTo close the program press Ctrl+C\t")
