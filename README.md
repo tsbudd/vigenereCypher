@@ -23,7 +23,7 @@ To decode, I use the formula:
 
 Because I used 94 ASCII characters as my matrix, I modified the formulas.
 
-## Running Program Test
+## Program Demo
 ```
 Welcome to the Vigenere Cypher Program!
 Created by: TYLER S. BUDD
