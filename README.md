@@ -28,7 +28,8 @@ Because I used 94 ASCII characters as my matrix, I modified the formulas.
 Welcome to the Vigenere Cypher Program!
 Created by: TYLER S. BUDD
 Creation date: September 12th, 2021
-NOTE: This encryption program only encrypts/decrypts letters, numbers, and basic punctuation. Any symbol/letter not found on a US keyboard will result in failure.
+NOTE: This encryption program only encrypts/decrypts letters, numbers, and basic punctuation. 
+Any symbol/letter not found on a US keyboard will result in failure.
 
 To ENCRYPT a message, type 'encrypt' and press ENTER
 To DECRYPT a message, type 'decrypt' and press ENTER
@@ -38,7 +39,9 @@ Selection: encrypt
 COPY/PASTE or TYPE plaintext message here and press ENTER:      this is a test
 
 Type in the key phrase to encrypt and press ENTER:      holiday
+
 Encrypted Message: ^RS]hS]hKh^O]^
+
 To close the program press Ctrl+C
 ```
 
@@ -50,7 +53,8 @@ Restart the program
 Welcome to the Vigenere Cypher Program!
 Created by: TYLER S. BUDD
 Creation date: September 12th, 2021
-NOTE: This encryption program only encrypts/decrypts letters, numbers, and basic punctuation. Any symbol/letter not found on a US keyboard will result in failure.
+NOTE: This encryption program only encrypts/decrypts letters, numbers, and basic punctuation. 
+Any symbol/letter not found on a US keyboard will result in failure.
 
 To ENCRYPT a message, type 'encrypt' and press ENTER
 To DECRYPT a message, type 'decrypt' and press ENTER
@@ -60,7 +64,9 @@ Selection: decrypt
 COPY/PASTE or TYPE encrypted message here and press ENTER:      ^RS]hS]hKh^O]^
 
 Type in the key phrase to decrypt and press ENTER:      holiday
+
 Decrypted Message: this is a test
+
 To close the program press Ctrl+C
 ```
 
