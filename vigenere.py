@@ -58,44 +58,55 @@ def decrypt(message, key):
 
 #-------------------------------------------------------- BEGIN MAIN CODE ----------------------------------------------
 
+
+def iteration():
+    mode = 0 #if 0, then program set to decryption mode, else if 1 it'll set to encryption
+    print("To ENCRYPT a message, type 'encrypt' and press ENTER\nTo DECRYPT a message, type 'decrypt' and press ENTER\n")
+    while mode == 0:
+        selection = input("Selection:\t")
+        if selection == "encrypt":
+            mode = 1
+            break
+
+        elif selection == "decrypt":
+            mode = 0
+            break
+
+        #ERROR CASE
+        else:
+            print("\nYou did not type 'encrypt' or 'decrypt'. Try again.\n")
+        
+
+    if mode == 0:
+        #getting encrypted message
+        message = input("\nCOPY/PASTE or TYPE encrypted message here and press ENTER:\t")
+        
+        #getting key
+        key = input("\nType in the key phrase to decrypt and press ENTER:\t")
+
+        decrypt(message, key)
+
+    else:
+        #getting encrypted message
+        message = input("\nCOPY/PASTE or TYPE plaintext message here and press ENTER:\t")
+
+        #getting key
+        key = input("\nType in the key phrase to encrypt and press ENTER:\t")
+
+        encrypt(message, key)
+
+    restart = input("\nWould you like to restart encoding/decoding process? (Y/N):\t")
+    while True:
+        if restart == "y" or restart == "Y":
+            print()
+            iteration()
+        elif restart == "n" or restart == "N":
+            print("\nGoodbye")
+            exit()
+        else:
+            restart = input("\nIncorrect format: press (Y/N):\t")
+
+
 print("Welcome to the Vigenere Cypher Program!\nCreated by: TYLER S. BUDD\nCreation date: September 12th, 2021")
 print("NOTE: This encryption program only encrypts/decrypts letters, numbers, and basic punctuation.\n\t Any symbol/letter not found on a US keyboard will result in failure.\n")
-
-
-mode = 0 #if 0, then program set to decryption mode, else if 1 it'll set to encryption
-print("To ENCRYPT a message, type 'encrypt' and press ENTER\nTo DECRYPT a message, type 'decrypt' and press ENTER\n")
-while mode == 0:
-    selection = input("Selection:\t")
-    if selection == "encrypt":
-        mode = 1
-        break
-
-    elif selection == "decrypt":
-        mode = 0
-        break
-
-    #ERROR CASE
-    else:
-        print("\nYou did not type 'encrypt' or 'decrypt'. Try again.\n")
-    
-
-if mode == 0:
-    #getting encrypted message
-    message = input("\nCOPY/PASTE or TYPE encrypted message here and press ENTER:\t")
-    
-    #getting key
-    key = input("\nType in the key phrase to decrypt and press ENTER:\t")
-
-    decrypt(message, key)
-
-else:
-    #getting encrypted message
-    message = input("\nCOPY/PASTE or TYPE plaintext message here and press ENTER:\t")
-
-    #getting key
-    key = input("\nType in the key phrase to encrypt and press ENTER:\t")
-
-    encrypt(message, key)
-
-while mode == 1 or mode == 0:
-    stop = input("\nTo close the program press Ctrl+C\t")
+iteration()
