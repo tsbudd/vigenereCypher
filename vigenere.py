@@ -7,6 +7,7 @@ Description: A modified version of the classic Vigenere Cypher. Instead of using
                 much harder to crack with human eyes.
 Additional Material: ASCII matrix used available on the file vigenereCypherMatrix.txt
 """
+import time
 
 #------------------------------------------------------- ENCRYPTION/DECRYPTION METHODS --------------------------------------
 
@@ -102,6 +103,7 @@ def iteration():
             iteration()
         elif restart == "n" or restart == "N":
             print("\nGoodbye")
+            time.sleep(3)
             exit()
         else:
             restart = input("\nIncorrect format: press (Y/N):\t")
