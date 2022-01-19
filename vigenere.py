@@ -17,7 +17,7 @@ def encrypt(message, key):
 
     #goes through all the chars in the message, and encodes them to fit within the 32-126 ASCII values
     for char in range(len(message)):
-        if char == len(key)-1: #resets the key index if key is much shorter than original message
+        if j == len(key): #resets the key index if key is much shorter than original message
             j = 0 
         
         #converting chars to ascii numerical values, setting the bottom of the range to 0 instead of 32
@@ -29,8 +29,7 @@ def encrypt(message, key):
         retString = retString + chr(encryptChar+32)
 
         #increments the key index
-        if j != 0:
-            j = j+1
+        j += 1
 
     print("\nEncrypted Message:\t%s" % retString)
 
@@ -40,7 +39,7 @@ def decrypt(message, key):
 
     #goes through all the chars in the message, and decodes them to return original message
     for char in range(len(message)):
-        if char == len(key)-1: #resetting key index
+        if j == len(key): #resetting key index
             j = 0
 
         #converting chars to ASCII numerical values, setting the bottom of the range to 0 instead of 32
@@ -51,8 +50,7 @@ def decrypt(message, key):
         retString = retString + chr(encryptChar+32)
         
         #increments key index
-        if j != 0:
-            j = j+1
+        j += 1
         
     print("\nDecrypted Message:\t%s" % retString)
 
